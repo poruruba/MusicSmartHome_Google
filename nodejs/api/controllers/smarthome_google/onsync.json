@@ -1,0 +1,35 @@
+[
+  {
+    "id": "soundbar",
+    "type": "action.devices.types.REMOTECONTROL",
+    "traits": [
+      "action.devices.traits.OnOff",
+      "action.devices.traits.MediaState",
+      "action.devices.traits.TransportControl",
+      "action.devices.traits.Volume"
+    ],
+    "name": {
+      "name": "サウンドバー"
+    },
+    "deviceInfo": {
+      "manufacturer": "MyHome Devices"
+    },
+    "willReportState": true,
+    "attributes": {
+      "transportControlSupportedCommands":[
+        "RESUME",
+        "PAUSE",
+        "NEXT",
+        "STOP"
+      ],
+      "volumeMaxLevel": 100,
+      "levelStepSize": 5,
+      "volumeCanMuteAndUnmute": true,
+      "supportActivityState": true,
+      "supportPlaybackState": true
+    },
+    "otherDeviceIds": [{
+      "deviceId": "deviceid123"
+    }]
+  }
+]
