@@ -1,13 +1,13 @@
 'use strict';
 
-const HELPER_BASE = process.env.HELPER_BASE || '../../helpers/';
+const HELPER_BASE = process.env.HELPER_BASE || "/opt/";
 const Response = require(HELPER_BASE + 'response');
 
 const UDP_DEVICE_ADDRESS = '192.168.1.255';
 const UDP_DEVICE_PORT = 3311;
 const UDP_RECV_PORT = 3312;
 const UDP_REPORTSTATE_PORT = 3314;
-const JWT_FILE_PATH = './keys/[クレデンシャルファイル名]';
+const JWT_FILE_PATH = './keys/[繧ｯ繝ｬ繝�繝ｳ繧ｷ繝｣繝ｫ繝輔ぃ繧､繝ｫ蜷江';
 
 const jwt_decode = require('jwt-decode');
 const {smarthome} = require('actions-on-google');
