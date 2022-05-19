@@ -153,7 +153,7 @@ long audio_playMp3(const char *p_fname, bool reset_gain = false)
   id3->RegisterMetadataCB(audio_MDCallback, (void*)"ID3TAG");
   mp3 = new AudioGeneratorMP3();
   g_audio_state = PLAYING;
-  mp3->begin(file_sd, out);
+  mp3->begin(id3, out);
 
   return 0;
 }
